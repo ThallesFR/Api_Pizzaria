@@ -1,0 +1,1 @@
+comoando apara atualizar :  npx tsc

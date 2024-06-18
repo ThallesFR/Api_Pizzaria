@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const freteController_1 = require("../controllers/freteController");
+const router = (0, express_1.Router)();
+router.get('/', freteController_1.getFretes);
+router.post('/', freteController_1.createFrete);
+router.put('/:id', freteController_1.updateFrete);
+router.delete('/:id', freteController_1.deleteFrete);
+exports.default = router;

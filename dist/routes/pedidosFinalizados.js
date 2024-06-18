@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const pedidoFinalizadoController_1 = require("../controllers/pedidoFinalizadoController");
+const router = (0, express_1.Router)();
+router.get('/', pedidoFinalizadoController_1.getPedidosFinalizados);
+router.post('/', pedidoFinalizadoController_1.createPedidoFinalizado);
+router.put('/:idpedidos', pedidoFinalizadoController_1.updatePedidoFinalizado);
+router.delete('/:idpedidos', pedidoFinalizadoController_1.deletePedidoFinalizado);
+exports.default = router;
